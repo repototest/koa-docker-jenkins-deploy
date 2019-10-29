@@ -1,11 +1,13 @@
-# Dockerfile
-# 使用node做为镜像
-FROM node
-# 在容器中创建该目录
-RUN mkdir -p /home/project
-# 设置容器的工作目录为该目录
-WORKDIR /home/project 
-# 向外提供3000端口
+FROM node:latest
+
+RUN mkdir -p /home/project2
+WORKDIR /home/project2
+
+COPY . /home/project2
+
+RUN npm install -g color-name --unsafe-perm=true
+
 EXPOSE 3000
-# 容器创建完成后执行的命令
-CMD npm install --registry=https://registry.npm.taobao.org && node ./app.js
+
+ENTRYPOINT ["npm", "run"]
+CMD ["start"]

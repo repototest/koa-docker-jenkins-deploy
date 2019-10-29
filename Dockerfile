@@ -1,9 +1,10 @@
 FROM node:latest
 
-RUN mkdir -p /home/project2
-WORKDIR /home/project2
+RUN mkdir -p /home/project
+WORKDIR /home/project
 
-COPY . /home/project2
+RUN chmod -R 777 /home/project
+COPY . /home/project
 
 RUN npm install -g color-name --unsafe-perm=true
 

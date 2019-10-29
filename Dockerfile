@@ -6,7 +6,7 @@ WORKDIR /home/project
 RUN chmod -R 777 /home/project
 COPY . /home/project
 
-RUN npm install -g color-name --unsafe-perm=true
+RUN npm install
 
 EXPOSE 3000
 

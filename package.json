@@ -1,0 +1,23 @@
+{
+  "name": "koa-docker-jenkins-deploy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/repototest/koa-docker-jenkins-deploy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/repototest/koa-docker-jenkins-deploy/issues"
+  },
+  "homepage": "https://github.com/repototest/koa-docker-jenkins-deploy#readme",
+  "dependencies": {
+    "koa": "^2.11.0"
+  }
+}
